@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Device run: ./mvnw test -Pmobile -Dplatform=android|ios -Dudid=... -->
+<suite name="shop-mobile">
+  <test name="testng-tests">
+    <classes>
+      <class name="com.example.shop.tests.LoginTest"/>
+    </classes>
+  </test>
+  <test name="cucumber-features">
+    <classes>
+      <class name="com.example.shop.CucumberTest"/>
+    </classes>
+  </test>
+</suite>

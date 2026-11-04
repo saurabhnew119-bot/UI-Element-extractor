@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Framework self-tests: no device or Appium server needed. -->
+<suite name="elementiq-framework-unit">
+  <test name="unit">
+    <packages>
+      <package name="com.elementiq.mobile.*"/>
+    </packages>
+  </test>
+</suite>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ElementIQ Inspector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ElementIQ Inspector</h1>
+    <div class="seg" id="platformSeg" role="tablist" aria-label="Platform">
+      <button data-platform="android" class="on">Android</button>
+      <button data-platform="ios">iOS</button>
+    </div>
+    <label class="inline">Appium <input id="appiumUrl" value="http://127.0.0.1:4723" size="26"></label>
+    <span id="health" class="badge">checking…</span>
+  </header>
+
+  <div id="sessionTabs" class="tabs"></div>
+
+  <main>
+    <section class="col left">
+      <h2>Devices <button id="discoverBtn">Discover</button></h2>
+      <div id="issues"></div>
+      <ul id="devices" class="list"></ul>
+
+      <h2>Connect</h2>
+      <form id="connectForm" class="form">
+        <label>Device UDID / serial <input name="udid" required></label>
+        <label>Device kind
+          <select name="deviceKind"><option value="">unknown</option><option>physical</option><option>emulator</option><option>simulator</option></select>
+        </label>
+        <label><span class="android-only">Package name</span><span class="ios-only">Bundle identifier</span> <input name="appId"></label>
+        <label class="android-only">Activity (optional) <input name="appActivity"></label>
+        <label>App build to install (optional) <input name="app" placeholder="/path/app.apk or .ipa/.app"></label>
+        <fieldset class="ios-only">
+          <legend>WebDriverAgent signing (physical iPhone)</legend>
+          <label>Team ID (xcodeOrgId) <input name="xcodeOrgId"></label>
+          <label>Signing identity <input name="xcodeSigningId" placeholder="Apple Development"></label>
+          <label>WDA bundle id <input name="updatedWDABundleId"></label>
+          <label>Existing WDA URL <input name="webDriverAgentUrl" placeholder="http://device-ip:8100"></label>
+          <label class="check"><input type="checkbox" name="usePrebuiltWDA"> Use prebuilt WDA</label>
+        </fieldset>
+        <button type="submit">Start session</button>
+      </form>
+
+      <h2>Offline snapshot</h2>
+      <form id="offlineForm" class="form">
+        <label>Page source (.xml) <input type="file" name="source" accept=".xml" required></label>
+        <label>Screenshot (.png, optional) <input type="file" name="shot" accept="image/png"></label>
+        <button type="submit">Load snapshot</button>
+      </form>
+    </section>
+
+    <section class="col center">
+      <div class="toolbar">
+        <button id="refreshBtn">Refresh</button>
+        <select id="contextSel" title="Context"></select>
+        <span id="sessionInfo" class="muted"></span>
+      </div>
+      <div id="notices"></div>
+      <div id="screen" class="screen"><p class="muted">Connect a device or load a snapshot.</p></div>
+    </section>
+
+    <section class="col right">
+      <h2>Hierarchy</h2>
+      <div id="tree" class="tree"></div>
+      <h2>Element</h2>
+      <div id="props"></div>
+      <h2>Locators</h2>
+      <div id="locators"></div>
+      <div id="actions" class="actions">
+        <button data-act="tap">Tap</button>
+        <input id="typeText" placeholder="text">
+        <button data-act="type">Type</button>
+        <button data-act="clear">Clear</button>
+        <button data-act="back">Back</button>
+      </div>
+      <h2>Save to repository</h2>
+      <form id="captureForm" class="form">
+        <label>Logical name <input name="name" required placeholder="loginButton"></label>
+        <label>Screen <input name="screen" required placeholder="Login"></label>
+        <label>Business purpose <input name="purpose" placeholder="Submits credentials"></label>
+        <label>Attach to existing element <select name="elementId"><option value="">— new / match by name —</option></select></label>
+        <button type="submit">Capture</button>
+      </form>
+    </section>
+  </main>
+
+  <section class="bottom">
+    <div class="tabs" id="bottomTabs">
+      <button data-tab="recording" class="on">Recording</button>
+      <button data-tab="repository">Repository</button>
+      <button data-tab="code">Code mapping</button>
+      <button data-tab="repairs">Repairs</button>
+    </div>
+    <div data-panel="recording">
+      <button id="recBtn">Start recording</button>
+      <button id="playBtn">Play back</button>
+      <ol id="recList" class="list"></ol>
+      <div id="playResult"></div>
+    </div>
+    <div data-panel="repository" hidden>
+      <button id="exportBtn">Export</button>
+      <label class="inline">Import <input type="file" id="importFile" accept=".json"></label>
+      <select id="importMode"><option value="merge">merge</option><option value="replace">replace</option></select>
+      <table id="repoTable"><thead><tr><th>Element</th><th>Purpose</th><th>Android</th><th>iOS</th><th></th></tr></thead><tbody></tbody></table>
+      <div id="history"></div>
+    </div>
+    <div data-panel="code" hidden>
+      <form id="scanForm" class="row"><input name="root" id="projectRoot" placeholder="Path to automation project" size="60" required><button>Scan &amp; map</button></form>
+      <div id="scanResult"></div>
+    </div>
+    <div data-panel="repairs" hidden>
+      <form id="repairForm" class="row">
+        <select name="elementId" required></select>
+        <label class="check"><input type="checkbox" name="dryRun"> Dry run</label>
+        <label class="check"><input type="checkbox" name="skipTests"> Skip tests</label>
+        <label class="check"><input type="checkbox" name="allowSharedEdits"> Allow shared edits</label>
+        <button>Repair on current session</button>
+        <button type="button" id="listRepairsBtn">History</button>
+      </form>
+      <p class="muted">Uses the active session's current screen and platform, and the project path from Code mapping.</p>
+      <div id="repairResult"></div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

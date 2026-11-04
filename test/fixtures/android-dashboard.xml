@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2400">
+  <android.widget.FrameLayout index="0" package="com.example.shop" class="android.widget.FrameLayout" text="" resource-id="" content-desc="" clickable="false" enabled="true" displayed="true" bounds="[0,0][1080,2400]">
+    <android.widget.LinearLayout index="0" package="com.example.shop" class="android.widget.LinearLayout" text="" resource-id="com.example.shop:id/dashboard_root" content-desc="" clickable="false" enabled="true" displayed="true" bounds="[0,0][1080,2400]">
+      <android.widget.TextView index="0" package="com.example.shop" class="android.widget.TextView" text="Hello, demo" resource-id="com.example.shop:id/greeting" content-desc="dashboard_greeting" clickable="false" enabled="true" displayed="true" bounds="[80,200][1000,300]" />
+      <android.widget.Button index="1" package="com.example.shop" class="android.widget.Button" text="LOG OUT" resource-id="com.example.shop:id/logout" content-desc="" clickable="true" enabled="true" displayed="true" bounds="[80,2200][1000,2320]" />
+    </android.widget.LinearLayout>
+  </android.widget.FrameLayout>
+</hierarchy>

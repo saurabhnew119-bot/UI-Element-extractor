@@ -1,0 +1,3857 @@
+{
+  "format": "elementiq-repository",
+  "schemaVersion": 1,
+  "elements": [
+    {
+      "id": "cfe3b2ca-a61c-4425-98f7-1a44c233ef8c",
+      "name": "loginButton",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Onboarding",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "Login",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "Login"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"track-button\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "track-button"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"Login\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "Login"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.view.ViewGroup",
+            "attrs": {
+              "resource-id": "track-button",
+              "content-desc": "Login",
+              "class": "android.view.ViewGroup",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 209,
+              "y": 1788,
+              "width": 662,
+              "height": 141
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 2,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:22:56.045Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "track-button",
+                  "content-desc": "Login",
+                  "class": "android.view.ViewGroup",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 209,
+                  "y": 1788,
+                  "width": 662,
+                  "height": 141
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 2,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "Login",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "Login"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"track-button\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "resource-id": "track-button"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"Login\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "content-desc": "Login"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "fc8ace327448e6ecc0db84d9e0e0be46f47e1c59a71c729aa9efb0b93411895d.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:22:56.045Z",
+      "updatedAt": "2026-10-29T13:22:56.045Z"
+    },
+    {
+      "id": "42875fb6-6a39-4ae6-9487-ec72363259c0",
+      "name": "becomeAdvisor",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Onboarding",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "Become an Advisor! Sign up/ Sign in",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "Become an Advisor! Sign up/ Sign in"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"Become an Advisor! Sign up/ Sign in\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "Become an Advisor! Sign up/ Sign in"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[4]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.view.ViewGroup",
+            "attrs": {
+              "content-desc": "Become an Advisor! Sign up/ Sign in",
+              "class": "android.view.ViewGroup",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 180,
+              "y": 1999,
+              "width": 721,
+              "height": 61
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 3,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:22:56.061Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "Become an Advisor! Sign up/ Sign in",
+                  "class": "android.view.ViewGroup",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 180,
+                  "y": 1999,
+                  "width": 721,
+                  "height": 61
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 3,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "Become an Advisor! Sign up/ Sign in",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "Become an Advisor! Sign up/ Sign in"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"Become an Advisor! Sign up/ Sign in\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "content-desc": "Become an Advisor! Sign up/ Sign in"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[4]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "fc8ace327448e6ecc0db84d9e0e0be46f47e1c59a71c729aa9efb0b93411895d.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:22:56.061Z",
+      "updatedAt": "2026-10-29T13:22:56.061Z"
+    },
+    {
+      "id": "5ae884ce-ca15-4374-9d76-094fe20159d7",
+      "name": "termsLink",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Onboarding",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "onborTerCond",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "onborTerCond"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"Terms & Conditions\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "Terms & Conditions"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"onborTerCond\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "onborTerCond"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[5]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.5"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.view.ViewGroup",
+            "attrs": {
+              "resource-id": "Terms & Conditions",
+              "content-desc": "onborTerCond",
+              "class": "android.view.ViewGroup",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 236,
+              "y": 2231,
+              "width": 311,
+              "height": 106
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 5,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:22:56.070Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "Terms & Conditions",
+                  "content-desc": "onborTerCond",
+                  "class": "android.view.ViewGroup",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 236,
+                  "y": 2231,
+                  "width": 311,
+                  "height": 106
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 5,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "onborTerCond",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "onborTerCond"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"Terms & Conditions\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "resource-id": "Terms & Conditions"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"onborTerCond\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "content-desc": "onborTerCond"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[5]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.5"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "fc8ace327448e6ecc0db84d9e0e0be46f47e1c59a71c729aa9efb0b93411895d.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:22:56.070Z",
+      "updatedAt": "2026-10-29T13:22:56.070Z"
+    },
+    {
+      "id": "693b4380-96a4-424a-8775-5c24f51bf43b",
+      "name": "privacyLink",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Onboarding",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "onborPriPol",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "onborPriPol"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"Privacy\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "Privacy"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"onborPriPol\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "onborPriPol"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[6]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.view.ViewGroup",
+            "attrs": {
+              "resource-id": "Privacy",
+              "content-desc": "onborPriPol",
+              "class": "android.view.ViewGroup",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 622,
+              "y": 2231,
+              "width": 223,
+              "height": 106
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 7,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:22:56.083Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "Privacy",
+                  "content-desc": "onborPriPol",
+                  "class": "android.view.ViewGroup",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 622,
+                  "y": 2231,
+                  "width": 223,
+                  "height": 106
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 7,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "onborPriPol",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "onborPriPol"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"Privacy\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "resource-id": "Privacy"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"onborPriPol\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "content-desc": "onborPriPol"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[6]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "fc8ace327448e6ecc0db84d9e0e0be46f47e1c59a71c729aa9efb0b93411895d.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:22:56.083Z",
+      "updatedAt": "2026-10-29T13:22:56.083Z"
+    },
+    {
+      "id": "e653f7f7-d05c-4c2e-848a-d700ddc21670",
+      "name": "onboardingCarousel",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Onboarding",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"swiper-click\").className(\"android.widget.HorizontalScrollView\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.HorizontalScrollView",
+                "attrs": {
+                  "resource-id": "swiper-click"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.HorizontalScrollView[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.HorizontalScrollView",
+            "attrs": {
+              "resource-id": "swiper-click",
+              "class": "android.widget.HorizontalScrollView",
+              "package": "com.mli.mspace",
+              "clickable": "false",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 0,
+              "y": 638,
+              "width": 1080,
+              "height": 1024
+            },
+            "ancestry": [
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 0,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:22:56.091Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.HorizontalScrollView",
+                "attrs": {
+                  "resource-id": "swiper-click",
+                  "class": "android.widget.HorizontalScrollView",
+                  "package": "com.mli.mspace",
+                  "clickable": "false",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 0,
+                  "y": 638,
+                  "width": 1080,
+                  "height": 1024
+                },
+                "ancestry": [
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 0,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"swiper-click\").className(\"android.widget.HorizontalScrollView\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.HorizontalScrollView",
+                    "attrs": {
+                      "resource-id": "swiper-click"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.HorizontalScrollView[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.0"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "fc8ace327448e6ecc0db84d9e0e0be46f47e1c59a71c729aa9efb0b93411895d.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:22:56.091Z",
+      "updatedAt": "2026-10-29T13:22:56.091Z"
+    },
+    {
+      "id": "82363552-43ce-4309-86df-ed11a9d12ce3",
+      "name": "loginTitle",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "logintext",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "logintext"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"logintext\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "logintext"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"logintext\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "content-desc": "logintext"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"logintext\").text(\"Login with\n Axis Max Life ID\")",
+              "rank": 3,
+              "score": 78,
+              "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "logintext",
+                  "text": "Login with\n Axis Max Life ID"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Login with\n Axis Max Life ID\")",
+              "rank": 4,
+              "score": 60,
+              "reason": "UiAutomator: class + visible text",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Login with\n Axis Max Life ID"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "//android.widget.TextView[@text=\"Login with\n Axis Max Life ID\"]",
+              "rank": 5,
+              "score": 30,
+              "reason": "XPath on class + text",
+              "warnings": [
+                "XPath is slower and more brittle than UiAutomator."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Login with\n Axis Max Life ID"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.TextView",
+            "attrs": {
+              "resource-id": "logintext",
+              "content-desc": "logintext",
+              "text": "Login with\n Axis Max Life ID",
+              "class": "android.widget.TextView",
+              "package": "com.mli.mspace",
+              "clickable": "false",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 162,
+              "y": 550,
+              "width": 756,
+              "height": 236
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 2,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:22.810Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "logintext",
+                  "content-desc": "logintext",
+                  "text": "Login with\n Axis Max Life ID",
+                  "class": "android.widget.TextView",
+                  "package": "com.mli.mspace",
+                  "clickable": "false",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 162,
+                  "y": 550,
+                  "width": 756,
+                  "height": 236
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 2,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "logintext",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "logintext"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"logintext\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "resource-id": "logintext"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"logintext\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "content-desc": "logintext"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"logintext\").text(\"Login with\n Axis Max Life ID\")",
+                  "rank": 3,
+                  "score": 78,
+                  "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "logintext",
+                      "text": "Login with\n Axis Max Life ID"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Login with\n Axis Max Life ID\")",
+                  "rank": 4,
+                  "score": 60,
+                  "reason": "UiAutomator: class + visible text",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Login with\n Axis Max Life ID"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "//android.widget.TextView[@text=\"Login with\n Axis Max Life ID\"]",
+                  "rank": 5,
+                  "score": 30,
+                  "reason": "XPath on class + text",
+                  "warnings": [
+                    "XPath is slower and more brittle than UiAutomator."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Login with\n Axis Max Life ID"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "e41d668c6470752fa678acc05115860e564a47a2f8998b5f8e8148e023e8db59.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:22.810Z",
+      "updatedAt": "2026-10-29T13:23:22.810Z"
+    },
+    {
+      "id": "e30a42cf-3ff1-47e7-96d4-78a516d64c12",
+      "name": "username",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "ssoId",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "ssoId"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"username\").className(\"android.widget.EditText\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "resource-id": "username"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"ssoId\").className(\"android.widget.EditText\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "content-desc": "ssoId"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.EditText[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.4.2"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.EditText",
+            "attrs": {
+              "resource-id": "username",
+              "content-desc": "ssoId",
+              "class": "android.widget.EditText",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 126,
+              "y": 965,
+              "width": 862,
+              "height": 57
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 2,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:22.818Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "resource-id": "username",
+                  "content-desc": "ssoId",
+                  "class": "android.widget.EditText",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 126,
+                  "y": 965,
+                  "width": 862,
+                  "height": 57
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 2,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "ssoId",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "ssoId"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"username\").className(\"android.widget.EditText\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.EditText",
+                    "attrs": {
+                      "resource-id": "username"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"ssoId\").className(\"android.widget.EditText\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.EditText",
+                    "attrs": {
+                      "content-desc": "ssoId"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.EditText[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.4.2"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "e41d668c6470752fa678acc05115860e564a47a2f8998b5f8e8148e023e8db59.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:22.818Z",
+      "updatedAt": "2026-10-29T13:23:22.818Z"
+    },
+    {
+      "id": "bc5f3f7e-4f27-4c94-b84c-e6e310cb78fa",
+      "name": "password",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "password",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"password\").className(\"android.widget.EditText\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "resource-id": "password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"password\").className(\"android.widget.EditText\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "content-desc": "password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[4]/android.widget.EditText[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.5.2"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.EditText",
+            "attrs": {
+              "resource-id": "password",
+              "content-desc": "password",
+              "class": "android.widget.EditText",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "true"
+            },
+            "bounds": {
+              "x": 126,
+              "y": 1154,
+              "width": 756,
+              "height": 57
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 2,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:22.834Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "resource-id": "password",
+                  "content-desc": "password",
+                  "class": "android.widget.EditText",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "true"
+                },
+                "bounds": {
+                  "x": 126,
+                  "y": 1154,
+                  "width": 756,
+                  "height": 57
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 2,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "password",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"password\").className(\"android.widget.EditText\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.EditText",
+                    "attrs": {
+                      "resource-id": "password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"password\").className(\"android.widget.EditText\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.EditText",
+                    "attrs": {
+                      "content-desc": "password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[4]/android.widget.EditText[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.5.2"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "e41d668c6470752fa678acc05115860e564a47a2f8998b5f8e8148e023e8db59.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:22.834Z",
+      "updatedAt": "2026-10-29T13:23:22.834Z"
+    },
+    {
+      "id": "0c0e551d-0d54-437e-a62c-d79cedcd1133",
+      "name": "passwordToggle",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "touchable",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "touchable"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"touchable\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "touchable"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"touchable\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "touchable"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[4]/android.view.ViewGroup[2]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.5.3"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.view.ViewGroup",
+            "attrs": {
+              "resource-id": "touchable",
+              "content-desc": "touchable",
+              "class": "android.view.ViewGroup",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 882,
+              "y": 1111,
+              "width": 84,
+              "height": 84
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 3,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:22.850Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "touchable",
+                  "content-desc": "touchable",
+                  "class": "android.view.ViewGroup",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 882,
+                  "y": 1111,
+                  "width": 84,
+                  "height": 84
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 3,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "touchable",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "touchable"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"touchable\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "resource-id": "touchable"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"touchable\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "content-desc": "touchable"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[4]/android.view.ViewGroup[2]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.5.3"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "e41d668c6470752fa678acc05115860e564a47a2f8998b5f8e8148e023e8db59.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:22.850Z",
+      "updatedAt": "2026-10-29T13:23:22.850Z"
+    },
+    {
+      "id": "87995b58-211d-43ca-ac52-e793738ad6ba",
+      "name": "rememberMe",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "checkboxto",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "checkboxto"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"checkboxto\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "checkboxto"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"checkboxto\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "checkboxto"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[6]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.view.ViewGroup",
+            "attrs": {
+              "resource-id": "checkboxto",
+              "content-desc": "checkboxto",
+              "class": "android.view.ViewGroup",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 92,
+              "y": 1287,
+              "width": 52,
+              "height": 53
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 7,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:22.860Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "checkboxto",
+                  "content-desc": "checkboxto",
+                  "class": "android.view.ViewGroup",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 92,
+                  "y": 1287,
+                  "width": 52,
+                  "height": 53
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 7,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "checkboxto",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "checkboxto"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"checkboxto\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "resource-id": "checkboxto"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"checkboxto\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "content-desc": "checkboxto"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[6]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "e41d668c6470752fa678acc05115860e564a47a2f8998b5f8e8148e023e8db59.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:22.860Z",
+      "updatedAt": "2026-10-29T13:23:22.860Z"
+    },
+    {
+      "id": "6d3fcb55-b997-4ca4-add5-c141464c7dd6",
+      "name": "submitLogin",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "button",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "button"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"track-button\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "track-button"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"button\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "button"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[8]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.10"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.view.ViewGroup",
+            "attrs": {
+              "resource-id": "track-button",
+              "content-desc": "button",
+              "class": "android.view.ViewGroup",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 209,
+              "y": 1430,
+              "width": 662,
+              "height": 141
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 10,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:22.881Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "resource-id": "track-button",
+                  "content-desc": "button",
+                  "class": "android.view.ViewGroup",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 209,
+                  "y": 1430,
+                  "width": 662,
+                  "height": 141
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 10,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "button",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "button"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"track-button\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "resource-id": "track-button"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"button\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "content-desc": "button"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[8]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.10"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "e41d668c6470752fa678acc05115860e564a47a2f8998b5f8e8148e023e8db59.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:22.881Z",
+      "updatedAt": "2026-10-29T13:23:22.881Z"
+    },
+    {
+      "id": "8c0ef541-c068-46a6-bf8c-cccc0271c99a",
+      "name": "forgotPassword",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "forgot",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "forgot"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"forgot\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "forgot"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"forgot\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "content-desc": "forgot"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"forgot\").text(\"Forgot password?\")",
+              "rank": 3,
+              "score": 78,
+              "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "forgot",
+                  "text": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Forgot password?\")",
+              "rank": 4,
+              "score": 60,
+              "reason": "UiAutomator: class + visible text",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "//android.widget.TextView[@text=\"Forgot password?\"]",
+              "rank": 5,
+              "score": 30,
+              "reason": "XPath on class + text",
+              "warnings": [
+                "XPath is slower and more brittle than UiAutomator."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[9]/android.widget.TextView[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.11.0"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.TextView",
+            "attrs": {
+              "resource-id": "forgot",
+              "content-desc": "forgot",
+              "text": "Forgot password?",
+              "class": "android.widget.TextView",
+              "package": "com.mli.mspace",
+              "clickable": "false",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 209,
+              "y": 1639,
+              "width": 662,
+              "height": 59
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 0,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:22.896Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "forgot",
+                  "content-desc": "forgot",
+                  "text": "Forgot password?",
+                  "class": "android.widget.TextView",
+                  "package": "com.mli.mspace",
+                  "clickable": "false",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 209,
+                  "y": 1639,
+                  "width": 662,
+                  "height": 59
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 0,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "forgot",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "forgot"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"forgot\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "resource-id": "forgot"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"forgot\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "content-desc": "forgot"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"forgot\").text(\"Forgot password?\")",
+                  "rank": 3,
+                  "score": 78,
+                  "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "forgot",
+                      "text": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Forgot password?\")",
+                  "rank": 4,
+                  "score": 60,
+                  "reason": "UiAutomator: class + visible text",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "//android.widget.TextView[@text=\"Forgot password?\"]",
+                  "rank": 5,
+                  "score": 30,
+                  "reason": "XPath on class + text",
+                  "warnings": [
+                    "XPath is slower and more brittle than UiAutomator."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[9]/android.widget.TextView[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.11.0"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "e41d668c6470752fa678acc05115860e564a47a2f8998b5f8e8148e023e8db59.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:22.896Z",
+      "updatedAt": "2026-10-29T13:23:22.896Z"
+    },
+    {
+      "id": "88519e67-b488-4126-8798-737ab21c9618",
+      "name": "notAnAdvisor",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "  Not an advisor/employee? Click here",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "  Not an advisor/employee? Click here"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"  Not an advisor/employee? Click here\").className(\"android.view.ViewGroup\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "  Not an advisor/employee? Click here"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[10]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.12"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.view.ViewGroup",
+            "attrs": {
+              "content-desc": "  Not an advisor/employee? Click here",
+              "class": "android.view.ViewGroup",
+              "package": "com.mli.mspace",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 164,
+              "y": 1929,
+              "width": 752,
+              "height": 62
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 12,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:22.912Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.view.ViewGroup",
+                "attrs": {
+                  "content-desc": "  Not an advisor/employee? Click here",
+                  "class": "android.view.ViewGroup",
+                  "package": "com.mli.mspace",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 164,
+                  "y": 1929,
+                  "width": 752,
+                  "height": 62
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 12,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "  Not an advisor/employee? Click here",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "  Not an advisor/employee? Click here"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"  Not an advisor/employee? Click here\").className(\"android.view.ViewGroup\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.view.ViewGroup",
+                    "attrs": {
+                      "content-desc": "  Not an advisor/employee? Click here"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[10]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.12"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "e41d668c6470752fa678acc05115860e564a47a2f8998b5f8e8148e023e8db59.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:22.912Z",
+      "updatedAt": "2026-10-29T13:23:22.912Z"
+    },
+    {
+      "id": "dc388ebf-26ee-45a7-9f85-ec6bd7780d66",
+      "name": "ssoIdError",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "ssoidconstant",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "ssoidconstant"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"ssoidconstant\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "ssoidconstant"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"ssoidconstant\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "content-desc": "ssoidconstant"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"ssoidconstant\").text(\"Please enter SSO ID\")",
+              "rank": 3,
+              "score": 78,
+              "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "ssoidconstant",
+                  "text": "Please enter SSO ID"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Please enter SSO ID\")",
+              "rank": 4,
+              "score": 60,
+              "reason": "UiAutomator: class + visible text",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Please enter SSO ID"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "//android.widget.TextView[@text=\"Please enter SSO ID\"]",
+              "rank": 5,
+              "score": 30,
+              "reason": "XPath on class + text",
+              "warnings": [
+                "XPath is slower and more brittle than UiAutomator."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Please enter SSO ID"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[2]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.5"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.TextView",
+            "attrs": {
+              "resource-id": "ssoidconstant",
+              "content-desc": "ssoidconstant",
+              "text": "Please enter SSO ID",
+              "class": "android.widget.TextView",
+              "package": "com.mli.mspace",
+              "clickable": "false",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 92,
+              "y": 1037,
+              "width": 898,
+              "height": 45
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 5,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:50.940Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "ssoidconstant",
+                  "content-desc": "ssoidconstant",
+                  "text": "Please enter SSO ID",
+                  "class": "android.widget.TextView",
+                  "package": "com.mli.mspace",
+                  "clickable": "false",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 92,
+                  "y": 1037,
+                  "width": 898,
+                  "height": 45
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 5,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "ssoidconstant",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "ssoidconstant"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"ssoidconstant\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "resource-id": "ssoidconstant"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"ssoidconstant\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "content-desc": "ssoidconstant"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"ssoidconstant\").text(\"Please enter SSO ID\")",
+                  "rank": 3,
+                  "score": 78,
+                  "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "ssoidconstant",
+                      "text": "Please enter SSO ID"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Please enter SSO ID\")",
+                  "rank": 4,
+                  "score": 60,
+                  "reason": "UiAutomator: class + visible text",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Please enter SSO ID"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "//android.widget.TextView[@text=\"Please enter SSO ID\"]",
+                  "rank": 5,
+                  "score": 30,
+                  "reason": "XPath on class + text",
+                  "warnings": [
+                    "XPath is slower and more brittle than UiAutomator."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Please enter SSO ID"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[2]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.5"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "81c289a02eb807ccb7aa5324098d8b5a5e22fe8574be95bde80d6eefef716f46.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:50.940Z",
+      "updatedAt": "2026-10-29T13:23:50.940Z"
+    },
+    {
+      "id": "9e2b5315-a208-4644-89ce-d84f32e054f6",
+      "name": "passwordError",
+      "purpose": "",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "passwordconstant",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "passwordconstant"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"passwordconstant\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "passwordconstant"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"passwordconstant\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "content-desc": "passwordconstant"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"passwordconstant\").text(\"Please enter Password\")",
+              "rank": 3,
+              "score": 78,
+              "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "passwordconstant",
+                  "text": "Please enter Password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Please enter Password\")",
+              "rank": 4,
+              "score": 60,
+              "reason": "UiAutomator: class + visible text",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Please enter Password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "//android.widget.TextView[@text=\"Please enter Password\"]",
+              "rank": 5,
+              "score": 30,
+              "reason": "XPath on class + text",
+              "warnings": [
+                "XPath is slower and more brittle than UiAutomator."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Please enter Password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[3]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.TextView",
+            "attrs": {
+              "resource-id": "passwordconstant",
+              "content-desc": "passwordconstant",
+              "text": "Please enter Password",
+              "class": "android.widget.TextView",
+              "package": "com.mli.mspace",
+              "clickable": "false",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 92,
+              "y": 1265,
+              "width": 898,
+              "height": 45
+            },
+            "ancestry": [
+              "android.view.ViewGroup",
+              "android.view.ViewGroup",
+              "android.widget.ScrollView",
+              "android.view.ViewGroup",
+              "android.view.ViewGroup"
+            ],
+            "siblingIndex": 7,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-29T13:23:50.971Z",
+              "device": {
+                "udid": "emulator-5554",
+                "model": "sdk_gphone64_x86_64",
+                "osVersion": "17"
+              },
+              "appId": "com.mli.mspace",
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "passwordconstant",
+                  "content-desc": "passwordconstant",
+                  "text": "Please enter Password",
+                  "class": "android.widget.TextView",
+                  "package": "com.mli.mspace",
+                  "clickable": "false",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 92,
+                  "y": 1265,
+                  "width": 898,
+                  "height": 45
+                },
+                "ancestry": [
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup",
+                  "android.widget.ScrollView",
+                  "android.view.ViewGroup",
+                  "android.view.ViewGroup"
+                ],
+                "siblingIndex": 7,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "passwordconstant",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "passwordconstant"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"passwordconstant\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "resource-id": "passwordconstant"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"passwordconstant\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "content-desc": "passwordconstant"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"passwordconstant\").text(\"Please enter Password\")",
+                  "rank": 3,
+                  "score": 78,
+                  "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "passwordconstant",
+                      "text": "Please enter Password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Please enter Password\")",
+                  "rank": 4,
+                  "score": 60,
+                  "reason": "UiAutomator: class + visible text",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Please enter Password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "//android.widget.TextView[@text=\"Please enter Password\"]",
+                  "rank": 5,
+                  "score": 30,
+                  "reason": "XPath on class + text",
+                  "warnings": [
+                    "XPath is slower and more brittle than UiAutomator."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Please enter Password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[3]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": "81c289a02eb807ccb7aa5324098d8b5a5e22fe8574be95bde80d6eefef716f46.png",
+              "source": "live"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-29T13:23:50.971Z",
+      "updatedAt": "2026-10-29T13:23:50.971Z"
+    }
+  ],
+  "tests": []
+}

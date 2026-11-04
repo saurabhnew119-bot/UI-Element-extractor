@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="Shop" label="Shop" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" name="dashboard.screen" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0">
+        <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Hello, demo" name="dashboard_greeting" label="Hello, demo" enabled="true" visible="true" accessible="true" x="24" y="100" width="342" height="40" index="0"/>
+        <XCUIElementTypeButton type="XCUIElementTypeButton" name="logoutButton" label="Log out" enabled="true" visible="true" accessible="true" x="24" y="760" width="342" height="52" index="1"/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

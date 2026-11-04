@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- mSpace device run: mvnw.cmd test -Pmobile -Dsuite=src/test/resources/suites/mspace.xml -Dplatform=android
+     -Delementiq.config=src/test/resources/mspace/android.properties -->
+<suite name="mspace-mobile">
+  <test name="mspace-login">
+    <classes>
+      <class name="com.mli.mspace.tests.LoginValidationTest"/>
+    </classes>
+  </test>
+</suite>

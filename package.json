@@ -1,0 +1,20 @@
+{
+  "name": "elementiq-inspector",
+  "version": "0.1.0",
+  "description": "Cross-platform (Android + iOS) mobile automation inspector with shared element repository and audited self-healing locator repair.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=23.6" },
+  "bin": { "elementiq": "src/cli.ts" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "cli": "node src/cli.ts",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc -p tsconfig.json",
+    "demo:repair": "node scripts/demo-repair.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.3"
+  }
+}

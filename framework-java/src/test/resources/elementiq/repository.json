@@ -1,0 +1,3693 @@
+{
+  "format": "elementiq-repository",
+  "schemaVersion": 1,
+  "elements": [
+    {
+      "id": "f9f71049-ae14-4ec9-951f-6c21aae17228",
+      "name": "username",
+      "purpose": "User name input",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "id",
+              "value": "com.example.shop:id/username",
+              "rank": 2,
+              "score": 90,
+              "reason": "resource-id",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "com.example.shop:id/username"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"com.example.shop:id/username\").className(\"android.widget.EditText\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/username"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.2"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.EditText",
+            "attrs": {
+              "resource-id": "com.example.shop:id/username",
+              "class": "android.widget.EditText",
+              "package": "com.example.shop",
+              "clickable": "true",
+              "password": "false",
+              "hint": "Username"
+            },
+            "bounds": {
+              "x": 80,
+              "y": 600,
+              "width": 920,
+              "height": 120
+            },
+            "ancestry": [
+              "hierarchy",
+              "android.widget.FrameLayout",
+              "android.widget.LinearLayout"
+            ],
+            "siblingIndex": 2,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:26.650Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/username",
+                  "class": "android.widget.EditText",
+                  "package": "com.example.shop",
+                  "clickable": "true",
+                  "password": "false",
+                  "hint": "Username"
+                },
+                "bounds": {
+                  "x": 80,
+                  "y": 600,
+                  "width": 920,
+                  "height": 120
+                },
+                "ancestry": [
+                  "hierarchy",
+                  "android.widget.FrameLayout",
+                  "android.widget.LinearLayout"
+                ],
+                "siblingIndex": 2,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "id",
+                  "value": "com.example.shop:id/username",
+                  "rank": 2,
+                  "score": 90,
+                  "reason": "resource-id",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/username"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"com.example.shop:id/username\").className(\"android.widget.EditText\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.EditText",
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/username"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.2"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        },
+        "ios": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "ios",
+              "strategy": "accessibility id",
+              "value": "usernameField",
+              "rank": 1,
+              "score": 95,
+              "reason": "accessibilityIdentifier (name differs from label)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "name": "usernameField"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeTextField\" AND label == \"Username\"",
+              "rank": 3,
+              "score": 66,
+              "reason": "Predicate: type + accessibility label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeTextField",
+                "attrs": {
+                  "label": "Username"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeTextField[`name == \"usernameField\"`]",
+              "rank": 4,
+              "score": 80,
+              "reason": "Class chain: type + name",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeTextField",
+                "attrs": {
+                  "name": "usernameField"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeTextField[`label == \"Username\"`]",
+              "rank": 4,
+              "score": 55,
+              "reason": "Class chain: type + label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeTextField",
+                "attrs": {
+                  "label": "Username"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeTextField\" AND value == \"Username\"",
+              "rank": 5,
+              "score": 42,
+              "reason": "Predicate: type + value",
+              "warnings": [
+                "Value reflects element state (typed text, switch state) and is often unstable."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeTextField",
+                "attrs": {
+                  "value": "Username"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "class name",
+              "value": "XCUIElementTypeTextField",
+              "rank": 5,
+              "score": 35,
+              "reason": "Element type only",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeTextField",
+                "attrs": {}
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "//XCUIElementTypeTextField[@name=\"usernameField\"]",
+              "rank": 6,
+              "score": 25,
+              "reason": "XPath on type + name",
+              "warnings": [
+                "XPath is slow on iOS; prefer accessibility id or predicates."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeTextField",
+                "attrs": {
+                  "name": "usernameField"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1]",
+              "rank": 6,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.1"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "ios",
+            "tag": "XCUIElementTypeTextField",
+            "attrs": {
+              "name": "usernameField",
+              "label": "Username",
+              "value": "Username",
+              "type": "XCUIElementTypeTextField",
+              "accessible": "true"
+            },
+            "bounds": {
+              "x": 24,
+              "y": 240,
+              "width": 342,
+              "height": 48
+            },
+            "ancestry": [
+              "AppiumAUT",
+              "XCUIElementTypeApplication",
+              "XCUIElementTypeWindow",
+              "XCUIElementTypeOther"
+            ],
+            "siblingIndex": 1,
+            "screenSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:27.722Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "ios",
+                "tag": "XCUIElementTypeTextField",
+                "attrs": {
+                  "name": "usernameField",
+                  "label": "Username",
+                  "value": "Username",
+                  "type": "XCUIElementTypeTextField",
+                  "accessible": "true"
+                },
+                "bounds": {
+                  "x": 24,
+                  "y": 240,
+                  "width": 342,
+                  "height": 48
+                },
+                "ancestry": [
+                  "AppiumAUT",
+                  "XCUIElementTypeApplication",
+                  "XCUIElementTypeWindow",
+                  "XCUIElementTypeOther"
+                ],
+                "siblingIndex": 1,
+                "screenSize": {
+                  "width": 390,
+                  "height": 844
+                }
+              },
+              "locators": [
+                {
+                  "platform": "ios",
+                  "strategy": "accessibility id",
+                  "value": "usernameField",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "accessibilityIdentifier (name differs from label)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "name": "usernameField"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeTextField\" AND label == \"Username\"",
+                  "rank": 3,
+                  "score": 66,
+                  "reason": "Predicate: type + accessibility label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeTextField",
+                    "attrs": {
+                      "label": "Username"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeTextField[`name == \"usernameField\"`]",
+                  "rank": 4,
+                  "score": 80,
+                  "reason": "Class chain: type + name",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeTextField",
+                    "attrs": {
+                      "name": "usernameField"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeTextField[`label == \"Username\"`]",
+                  "rank": 4,
+                  "score": 55,
+                  "reason": "Class chain: type + label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeTextField",
+                    "attrs": {
+                      "label": "Username"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeTextField\" AND value == \"Username\"",
+                  "rank": 5,
+                  "score": 42,
+                  "reason": "Predicate: type + value",
+                  "warnings": [
+                    "Value reflects element state (typed text, switch state) and is often unstable."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeTextField",
+                    "attrs": {
+                      "value": "Username"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "class name",
+                  "value": "XCUIElementTypeTextField",
+                  "rank": 5,
+                  "score": 35,
+                  "reason": "Element type only",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeTextField",
+                    "attrs": {}
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "//XCUIElementTypeTextField[@name=\"usernameField\"]",
+                  "rank": 6,
+                  "score": 25,
+                  "reason": "XPath on type + name",
+                  "warnings": [
+                    "XPath is slow on iOS; prefer accessibility id or predicates."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeTextField",
+                    "attrs": {
+                      "name": "usernameField"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1]",
+                  "rank": 6,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.1"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-28T05:58:26.650Z",
+      "updatedAt": "2026-10-28T05:58:27.722Z"
+    },
+    {
+      "id": "5909e6f0-a28d-48e4-a35e-779db986020c",
+      "name": "password",
+      "purpose": "Password input",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "id",
+              "value": "com.example.shop:id/password",
+              "rank": 2,
+              "score": 90,
+              "reason": "resource-id",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "com.example.shop:id/password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"com.example.shop:id/password\").className(\"android.widget.EditText\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[2]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.3"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.EditText",
+            "attrs": {
+              "resource-id": "com.example.shop:id/password",
+              "class": "android.widget.EditText",
+              "package": "com.example.shop",
+              "clickable": "true",
+              "password": "true",
+              "hint": "Password"
+            },
+            "bounds": {
+              "x": 80,
+              "y": 760,
+              "width": 920,
+              "height": 120
+            },
+            "ancestry": [
+              "hierarchy",
+              "android.widget.FrameLayout",
+              "android.widget.LinearLayout"
+            ],
+            "siblingIndex": 3,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:28.755Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.EditText",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/password",
+                  "class": "android.widget.EditText",
+                  "package": "com.example.shop",
+                  "clickable": "true",
+                  "password": "true",
+                  "hint": "Password"
+                },
+                "bounds": {
+                  "x": 80,
+                  "y": 760,
+                  "width": 920,
+                  "height": 120
+                },
+                "ancestry": [
+                  "hierarchy",
+                  "android.widget.FrameLayout",
+                  "android.widget.LinearLayout"
+                ],
+                "siblingIndex": 3,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "id",
+                  "value": "com.example.shop:id/password",
+                  "rank": 2,
+                  "score": 90,
+                  "reason": "resource-id",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"com.example.shop:id/password\").className(\"android.widget.EditText\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.EditText",
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[2]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.3"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        },
+        "ios": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "ios",
+              "strategy": "accessibility id",
+              "value": "passwordField",
+              "rank": 1,
+              "score": 95,
+              "reason": "accessibilityIdentifier (name differs from label)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "name": "passwordField"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeSecureTextField\" AND label == \"Password\"",
+              "rank": 3,
+              "score": 66,
+              "reason": "Predicate: type + accessibility label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeSecureTextField",
+                "attrs": {
+                  "label": "Password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeSecureTextField[`name == \"passwordField\"`]",
+              "rank": 4,
+              "score": 80,
+              "reason": "Class chain: type + name",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeSecureTextField",
+                "attrs": {
+                  "name": "passwordField"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeSecureTextField[`label == \"Password\"`]",
+              "rank": 4,
+              "score": 55,
+              "reason": "Class chain: type + label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeSecureTextField",
+                "attrs": {
+                  "label": "Password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeSecureTextField\" AND value == \"Password\"",
+              "rank": 5,
+              "score": 42,
+              "reason": "Predicate: type + value",
+              "warnings": [
+                "Value reflects element state (typed text, switch state) and is often unstable."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeSecureTextField",
+                "attrs": {
+                  "value": "Password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "class name",
+              "value": "XCUIElementTypeSecureTextField",
+              "rank": 5,
+              "score": 35,
+              "reason": "Element type only",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeSecureTextField",
+                "attrs": {}
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "//XCUIElementTypeSecureTextField[@name=\"passwordField\"]",
+              "rank": 6,
+              "score": 25,
+              "reason": "XPath on type + name",
+              "warnings": [
+                "XPath is slow on iOS; prefer accessibility id or predicates."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeSecureTextField",
+                "attrs": {
+                  "name": "passwordField"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeSecureTextField[1]",
+              "rank": 6,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.2"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "ios",
+            "tag": "XCUIElementTypeSecureTextField",
+            "attrs": {
+              "name": "passwordField",
+              "label": "Password",
+              "value": "Password",
+              "type": "XCUIElementTypeSecureTextField",
+              "accessible": "true"
+            },
+            "bounds": {
+              "x": 24,
+              "y": 304,
+              "width": 342,
+              "height": 48
+            },
+            "ancestry": [
+              "AppiumAUT",
+              "XCUIElementTypeApplication",
+              "XCUIElementTypeWindow",
+              "XCUIElementTypeOther"
+            ],
+            "siblingIndex": 2,
+            "screenSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:29.817Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "ios",
+                "tag": "XCUIElementTypeSecureTextField",
+                "attrs": {
+                  "name": "passwordField",
+                  "label": "Password",
+                  "value": "Password",
+                  "type": "XCUIElementTypeSecureTextField",
+                  "accessible": "true"
+                },
+                "bounds": {
+                  "x": 24,
+                  "y": 304,
+                  "width": 342,
+                  "height": 48
+                },
+                "ancestry": [
+                  "AppiumAUT",
+                  "XCUIElementTypeApplication",
+                  "XCUIElementTypeWindow",
+                  "XCUIElementTypeOther"
+                ],
+                "siblingIndex": 2,
+                "screenSize": {
+                  "width": 390,
+                  "height": 844
+                }
+              },
+              "locators": [
+                {
+                  "platform": "ios",
+                  "strategy": "accessibility id",
+                  "value": "passwordField",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "accessibilityIdentifier (name differs from label)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "name": "passwordField"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeSecureTextField\" AND label == \"Password\"",
+                  "rank": 3,
+                  "score": 66,
+                  "reason": "Predicate: type + accessibility label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeSecureTextField",
+                    "attrs": {
+                      "label": "Password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeSecureTextField[`name == \"passwordField\"`]",
+                  "rank": 4,
+                  "score": 80,
+                  "reason": "Class chain: type + name",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeSecureTextField",
+                    "attrs": {
+                      "name": "passwordField"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeSecureTextField[`label == \"Password\"`]",
+                  "rank": 4,
+                  "score": 55,
+                  "reason": "Class chain: type + label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeSecureTextField",
+                    "attrs": {
+                      "label": "Password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeSecureTextField\" AND value == \"Password\"",
+                  "rank": 5,
+                  "score": 42,
+                  "reason": "Predicate: type + value",
+                  "warnings": [
+                    "Value reflects element state (typed text, switch state) and is often unstable."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeSecureTextField",
+                    "attrs": {
+                      "value": "Password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "class name",
+                  "value": "XCUIElementTypeSecureTextField",
+                  "rank": 5,
+                  "score": 35,
+                  "reason": "Element type only",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeSecureTextField",
+                    "attrs": {}
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "//XCUIElementTypeSecureTextField[@name=\"passwordField\"]",
+                  "rank": 6,
+                  "score": 25,
+                  "reason": "XPath on type + name",
+                  "warnings": [
+                    "XPath is slow on iOS; prefer accessibility id or predicates."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeSecureTextField",
+                    "attrs": {
+                      "name": "passwordField"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeSecureTextField[1]",
+                  "rank": 6,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.2"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-28T05:58:28.755Z",
+      "updatedAt": "2026-10-28T05:58:29.817Z"
+    },
+    {
+      "id": "48a95d41-25d7-4d3c-85f0-ab8706f86b74",
+      "name": "loginButton",
+      "purpose": "Submits credentials",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "id",
+              "value": "com.example.shop:id/login_button",
+              "rank": 2,
+              "score": 90,
+              "reason": "resource-id",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "com.example.shop:id/login_button"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"com.example.shop:id/login_button\").className(\"android.widget.Button\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.Button",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/login_button"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"com.example.shop:id/login_button\").text(\"LOG IN\")",
+              "rank": 3,
+              "score": 78,
+              "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "com.example.shop:id/login_button",
+                  "text": "LOG IN"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().className(\"android.widget.Button\").text(\"LOG IN\")",
+              "rank": 4,
+              "score": 60,
+              "reason": "UiAutomator: class + visible text",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "tag": "android.widget.Button",
+                "attrs": {
+                  "text": "LOG IN"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "//android.widget.Button[@text=\"LOG IN\"]",
+              "rank": 5,
+              "score": 30,
+              "reason": "XPath on class + text",
+              "warnings": [
+                "XPath is slower and more brittle than UiAutomator."
+              ],
+              "criteria": {
+                "tag": "android.widget.Button",
+                "attrs": {
+                  "text": "LOG IN"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.4"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.Button",
+            "attrs": {
+              "resource-id": "com.example.shop:id/login_button",
+              "text": "LOG IN",
+              "class": "android.widget.Button",
+              "package": "com.example.shop",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 80,
+              "y": 960,
+              "width": 920,
+              "height": 130
+            },
+            "ancestry": [
+              "hierarchy",
+              "android.widget.FrameLayout",
+              "android.widget.LinearLayout"
+            ],
+            "siblingIndex": 4,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:30.812Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.Button",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/login_button",
+                  "text": "LOG IN",
+                  "class": "android.widget.Button",
+                  "package": "com.example.shop",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 80,
+                  "y": 960,
+                  "width": 920,
+                  "height": 130
+                },
+                "ancestry": [
+                  "hierarchy",
+                  "android.widget.FrameLayout",
+                  "android.widget.LinearLayout"
+                ],
+                "siblingIndex": 4,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "id",
+                  "value": "com.example.shop:id/login_button",
+                  "rank": 2,
+                  "score": 90,
+                  "reason": "resource-id",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/login_button"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"com.example.shop:id/login_button\").className(\"android.widget.Button\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.Button",
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/login_button"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"com.example.shop:id/login_button\").text(\"LOG IN\")",
+                  "rank": 3,
+                  "score": 78,
+                  "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/login_button",
+                      "text": "LOG IN"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().className(\"android.widget.Button\").text(\"LOG IN\")",
+                  "rank": 4,
+                  "score": 60,
+                  "reason": "UiAutomator: class + visible text",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.Button",
+                    "attrs": {
+                      "text": "LOG IN"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "//android.widget.Button[@text=\"LOG IN\"]",
+                  "rank": 5,
+                  "score": 30,
+                  "reason": "XPath on class + text",
+                  "warnings": [
+                    "XPath is slower and more brittle than UiAutomator."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.Button",
+                    "attrs": {
+                      "text": "LOG IN"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.4"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        },
+        "ios": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "ios",
+              "strategy": "accessibility id",
+              "value": "loginButton",
+              "rank": 1,
+              "score": 95,
+              "reason": "accessibilityIdentifier (name differs from label)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "name": "loginButton"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeButton\" AND label == \"Log In\"",
+              "rank": 3,
+              "score": 66,
+              "reason": "Predicate: type + accessibility label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "label": "Log In"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeButton[`name == \"loginButton\"`]",
+              "rank": 4,
+              "score": 80,
+              "reason": "Class chain: type + name",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "loginButton"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeButton[`label == \"Log In\"`]",
+              "rank": 4,
+              "score": 55,
+              "reason": "Class chain: type + label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "label": "Log In"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "//XCUIElementTypeButton[@name=\"loginButton\"]",
+              "rank": 6,
+              "score": 25,
+              "reason": "XPath on type + name",
+              "warnings": [
+                "XPath is slow on iOS; prefer accessibility id or predicates."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "loginButton"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]",
+              "rank": 6,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.3"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "class name",
+              "value": "XCUIElementTypeButton",
+              "rank": 5,
+              "score": 0,
+              "reason": "Element type only",
+              "warnings": [
+                "Matches 2 elements in this hierarchy."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {}
+              },
+              "snapshotMatches": 2,
+              "liveMatches": null,
+              "unique": false
+            }
+          ],
+          "fingerprint": {
+            "platform": "ios",
+            "tag": "XCUIElementTypeButton",
+            "attrs": {
+              "name": "loginButton",
+              "label": "Log In",
+              "type": "XCUIElementTypeButton",
+              "accessible": "true"
+            },
+            "bounds": {
+              "x": 24,
+              "y": 384,
+              "width": 342,
+              "height": 52
+            },
+            "ancestry": [
+              "AppiumAUT",
+              "XCUIElementTypeApplication",
+              "XCUIElementTypeWindow",
+              "XCUIElementTypeOther"
+            ],
+            "siblingIndex": 3,
+            "screenSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:31.933Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "ios",
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "loginButton",
+                  "label": "Log In",
+                  "type": "XCUIElementTypeButton",
+                  "accessible": "true"
+                },
+                "bounds": {
+                  "x": 24,
+                  "y": 384,
+                  "width": 342,
+                  "height": 52
+                },
+                "ancestry": [
+                  "AppiumAUT",
+                  "XCUIElementTypeApplication",
+                  "XCUIElementTypeWindow",
+                  "XCUIElementTypeOther"
+                ],
+                "siblingIndex": 3,
+                "screenSize": {
+                  "width": 390,
+                  "height": 844
+                }
+              },
+              "locators": [
+                {
+                  "platform": "ios",
+                  "strategy": "accessibility id",
+                  "value": "loginButton",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "accessibilityIdentifier (name differs from label)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "name": "loginButton"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeButton\" AND label == \"Log In\"",
+                  "rank": 3,
+                  "score": 66,
+                  "reason": "Predicate: type + accessibility label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "label": "Log In"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeButton[`name == \"loginButton\"`]",
+                  "rank": 4,
+                  "score": 80,
+                  "reason": "Class chain: type + name",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "name": "loginButton"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeButton[`label == \"Log In\"`]",
+                  "rank": 4,
+                  "score": 55,
+                  "reason": "Class chain: type + label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "label": "Log In"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "//XCUIElementTypeButton[@name=\"loginButton\"]",
+                  "rank": 6,
+                  "score": 25,
+                  "reason": "XPath on type + name",
+                  "warnings": [
+                    "XPath is slow on iOS; prefer accessibility id or predicates."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "name": "loginButton"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]",
+                  "rank": 6,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.3"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "class name",
+                  "value": "XCUIElementTypeButton",
+                  "rank": 5,
+                  "score": 0,
+                  "reason": "Element type only",
+                  "warnings": [
+                    "Matches 2 elements in this hierarchy."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {}
+                  },
+                  "snapshotMatches": 2,
+                  "liveMatches": null,
+                  "unique": false
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-28T05:58:30.812Z",
+      "updatedAt": "2026-10-28T05:58:31.933Z"
+    },
+    {
+      "id": "a786972a-36e1-4126-a25b-ccdaa61eb364",
+      "name": "forgotPassword",
+      "purpose": "Opens password reset",
+      "platforms": {
+        "android": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "forgot_password",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "forgot_password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"forgot_password\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "content-desc": "forgot_password"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Forgot password?\")",
+              "rank": 4,
+              "score": 60,
+              "reason": "UiAutomator: class + visible text",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "//android.widget.TextView[@text=\"Forgot password?\"]",
+              "rank": 5,
+              "score": 30,
+              "reason": "XPath on class + text",
+              "warnings": [
+                "XPath is slower and more brittle than UiAutomator."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.5"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.TextView",
+            "attrs": {
+              "content-desc": "forgot_password",
+              "text": "Forgot password?",
+              "class": "android.widget.TextView",
+              "package": "com.example.shop",
+              "clickable": "true",
+              "password": "false"
+            },
+            "bounds": {
+              "x": 340,
+              "y": 1140,
+              "width": 400,
+              "height": 60
+            },
+            "ancestry": [
+              "hierarchy",
+              "android.widget.FrameLayout",
+              "android.widget.LinearLayout"
+            ],
+            "siblingIndex": 5,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:32.938Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "content-desc": "forgot_password",
+                  "text": "Forgot password?",
+                  "class": "android.widget.TextView",
+                  "package": "com.example.shop",
+                  "clickable": "true",
+                  "password": "false"
+                },
+                "bounds": {
+                  "x": 340,
+                  "y": 1140,
+                  "width": 400,
+                  "height": 60
+                },
+                "ancestry": [
+                  "hierarchy",
+                  "android.widget.FrameLayout",
+                  "android.widget.LinearLayout"
+                ],
+                "siblingIndex": 5,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "forgot_password",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "forgot_password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"forgot_password\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "content-desc": "forgot_password"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Forgot password?\")",
+                  "rank": 4,
+                  "score": 60,
+                  "reason": "UiAutomator: class + visible text",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "//android.widget.TextView[@text=\"Forgot password?\"]",
+                  "rank": 5,
+                  "score": 30,
+                  "reason": "XPath on class + text",
+                  "warnings": [
+                    "XPath is slower and more brittle than UiAutomator."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.5"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        },
+        "ios": {
+          "screen": "Login",
+          "locators": [
+            {
+              "platform": "ios",
+              "strategy": "accessibility id",
+              "value": "Forgot password?",
+              "rank": 2,
+              "score": 72,
+              "reason": "accessibility id (name)",
+              "warnings": [
+                "name equals label, so no accessibilityIdentifier appears to be set; this value follows the visible label and may change with copy or localization."
+              ],
+              "criteria": {
+                "attrs": {
+                  "name": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeButton\" AND label == \"Forgot password?\"",
+              "rank": 3,
+              "score": 66,
+              "reason": "Predicate: type + accessibility label",
+              "warnings": [
+                "Label may change with copy or localization."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "label": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeButton[`name == \"Forgot password?\"`]",
+              "rank": 4,
+              "score": 58,
+              "reason": "Class chain: type + name",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "//XCUIElementTypeButton[@name=\"Forgot password?\"]",
+              "rank": 6,
+              "score": 25,
+              "reason": "XPath on type + name",
+              "warnings": [
+                "XPath is slow on iOS; prefer accessibility id or predicates."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "Forgot password?"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[2]",
+              "rank": 6,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.4"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "class name",
+              "value": "XCUIElementTypeButton",
+              "rank": 5,
+              "score": 0,
+              "reason": "Element type only",
+              "warnings": [
+                "Matches 2 elements in this hierarchy."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {}
+              },
+              "snapshotMatches": 2,
+              "liveMatches": null,
+              "unique": false
+            }
+          ],
+          "fingerprint": {
+            "platform": "ios",
+            "tag": "XCUIElementTypeButton",
+            "attrs": {
+              "name": "Forgot password?",
+              "label": "Forgot password?",
+              "type": "XCUIElementTypeButton",
+              "accessible": "true"
+            },
+            "bounds": {
+              "x": 120,
+              "y": 460,
+              "width": 150,
+              "height": 32
+            },
+            "ancestry": [
+              "AppiumAUT",
+              "XCUIElementTypeApplication",
+              "XCUIElementTypeWindow",
+              "XCUIElementTypeOther"
+            ],
+            "siblingIndex": 4,
+            "screenSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:33.986Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "ios",
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "Forgot password?",
+                  "label": "Forgot password?",
+                  "type": "XCUIElementTypeButton",
+                  "accessible": "true"
+                },
+                "bounds": {
+                  "x": 120,
+                  "y": 460,
+                  "width": 150,
+                  "height": 32
+                },
+                "ancestry": [
+                  "AppiumAUT",
+                  "XCUIElementTypeApplication",
+                  "XCUIElementTypeWindow",
+                  "XCUIElementTypeOther"
+                ],
+                "siblingIndex": 4,
+                "screenSize": {
+                  "width": 390,
+                  "height": 844
+                }
+              },
+              "locators": [
+                {
+                  "platform": "ios",
+                  "strategy": "accessibility id",
+                  "value": "Forgot password?",
+                  "rank": 2,
+                  "score": 72,
+                  "reason": "accessibility id (name)",
+                  "warnings": [
+                    "name equals label, so no accessibilityIdentifier appears to be set; this value follows the visible label and may change with copy or localization."
+                  ],
+                  "criteria": {
+                    "attrs": {
+                      "name": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeButton\" AND label == \"Forgot password?\"",
+                  "rank": 3,
+                  "score": 66,
+                  "reason": "Predicate: type + accessibility label",
+                  "warnings": [
+                    "Label may change with copy or localization."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "label": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeButton[`name == \"Forgot password?\"`]",
+                  "rank": 4,
+                  "score": 58,
+                  "reason": "Class chain: type + name",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "name": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "//XCUIElementTypeButton[@name=\"Forgot password?\"]",
+                  "rank": 6,
+                  "score": 25,
+                  "reason": "XPath on type + name",
+                  "warnings": [
+                    "XPath is slow on iOS; prefer accessibility id or predicates."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "name": "Forgot password?"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[2]",
+                  "rank": 6,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.4"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "class name",
+                  "value": "XCUIElementTypeButton",
+                  "rank": 5,
+                  "score": 0,
+                  "reason": "Element type only",
+                  "warnings": [
+                    "Matches 2 elements in this hierarchy."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {}
+                  },
+                  "snapshotMatches": 2,
+                  "liveMatches": null,
+                  "unique": false
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-28T05:58:32.938Z",
+      "updatedAt": "2026-10-28T05:58:33.986Z"
+    },
+    {
+      "id": "d2564e7a-6152-40ea-b004-ace18b19c3db",
+      "name": "dashboardGreeting",
+      "purpose": "Confirms login",
+      "platforms": {
+        "android": {
+          "screen": "Dashboard",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "accessibility id",
+              "value": "dashboard_greeting",
+              "rank": 1,
+              "score": 95,
+              "reason": "content-desc (accessibility description)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "content-desc": "dashboard_greeting"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "id",
+              "value": "com.example.shop:id/greeting",
+              "rank": 2,
+              "score": 90,
+              "reason": "resource-id",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "com.example.shop:id/greeting"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"com.example.shop:id/greeting\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/greeting"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().description(\"dashboard_greeting\").className(\"android.widget.TextView\")",
+              "rank": 3,
+              "score": 80,
+              "reason": "UiAutomator: content-desc + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "content-desc": "dashboard_greeting"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"com.example.shop:id/greeting\").text(\"Hello, demo\")",
+              "rank": 3,
+              "score": 78,
+              "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "com.example.shop:id/greeting",
+                  "text": "Hello, demo"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Hello, demo\")",
+              "rank": 4,
+              "score": 60,
+              "reason": "UiAutomator: class + visible text",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Hello, demo"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "//android.widget.TextView[@text=\"Hello, demo\"]",
+              "rank": 5,
+              "score": 30,
+              "reason": "XPath on class + text",
+              "warnings": [
+                "XPath is slower and more brittle than UiAutomator."
+              ],
+              "criteria": {
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "text": "Hello, demo"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.TextView",
+            "attrs": {
+              "resource-id": "com.example.shop:id/greeting",
+              "content-desc": "dashboard_greeting",
+              "text": "Hello, demo",
+              "class": "android.widget.TextView",
+              "package": "com.example.shop",
+              "clickable": "false"
+            },
+            "bounds": {
+              "x": 80,
+              "y": 200,
+              "width": 920,
+              "height": 100
+            },
+            "ancestry": [
+              "hierarchy",
+              "android.widget.FrameLayout",
+              "android.widget.LinearLayout"
+            ],
+            "siblingIndex": 0,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:35.110Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.TextView",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/greeting",
+                  "content-desc": "dashboard_greeting",
+                  "text": "Hello, demo",
+                  "class": "android.widget.TextView",
+                  "package": "com.example.shop",
+                  "clickable": "false"
+                },
+                "bounds": {
+                  "x": 80,
+                  "y": 200,
+                  "width": 920,
+                  "height": 100
+                },
+                "ancestry": [
+                  "hierarchy",
+                  "android.widget.FrameLayout",
+                  "android.widget.LinearLayout"
+                ],
+                "siblingIndex": 0,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "accessibility id",
+                  "value": "dashboard_greeting",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "content-desc (accessibility description)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "content-desc": "dashboard_greeting"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "id",
+                  "value": "com.example.shop:id/greeting",
+                  "rank": 2,
+                  "score": 90,
+                  "reason": "resource-id",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/greeting"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"com.example.shop:id/greeting\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/greeting"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().description(\"dashboard_greeting\").className(\"android.widget.TextView\")",
+                  "rank": 3,
+                  "score": 80,
+                  "reason": "UiAutomator: content-desc + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "content-desc": "dashboard_greeting"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"com.example.shop:id/greeting\").text(\"Hello, demo\")",
+                  "rank": 3,
+                  "score": 78,
+                  "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/greeting",
+                      "text": "Hello, demo"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().className(\"android.widget.TextView\").text(\"Hello, demo\")",
+                  "rank": 4,
+                  "score": 60,
+                  "reason": "UiAutomator: class + visible text",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Hello, demo"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "//android.widget.TextView[@text=\"Hello, demo\"]",
+                  "rank": 5,
+                  "score": 30,
+                  "reason": "XPath on class + text",
+                  "warnings": [
+                    "XPath is slower and more brittle than UiAutomator."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.TextView",
+                    "attrs": {
+                      "text": "Hello, demo"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        },
+        "ios": {
+          "screen": "Dashboard",
+          "locators": [
+            {
+              "platform": "ios",
+              "strategy": "accessibility id",
+              "value": "dashboard_greeting",
+              "rank": 1,
+              "score": 95,
+              "reason": "accessibilityIdentifier (name differs from label)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "name": "dashboard_greeting"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeStaticText\" AND label == \"Hello, demo\"",
+              "rank": 3,
+              "score": 66,
+              "reason": "Predicate: type + accessibility label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeStaticText",
+                "attrs": {
+                  "label": "Hello, demo"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeStaticText[`name == \"dashboard_greeting\"`]",
+              "rank": 4,
+              "score": 80,
+              "reason": "Class chain: type + name",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeStaticText",
+                "attrs": {
+                  "name": "dashboard_greeting"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeStaticText[`label == \"Hello, demo\"`]",
+              "rank": 4,
+              "score": 55,
+              "reason": "Class chain: type + label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeStaticText",
+                "attrs": {
+                  "label": "Hello, demo"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeStaticText\" AND value == \"Hello, demo\"",
+              "rank": 5,
+              "score": 42,
+              "reason": "Predicate: type + value",
+              "warnings": [
+                "Value reflects element state (typed text, switch state) and is often unstable."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeStaticText",
+                "attrs": {
+                  "value": "Hello, demo"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "class name",
+              "value": "XCUIElementTypeStaticText",
+              "rank": 5,
+              "score": 35,
+              "reason": "Element type only",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeStaticText",
+                "attrs": {}
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "//XCUIElementTypeStaticText[@name=\"dashboard_greeting\"]",
+              "rank": 6,
+              "score": 25,
+              "reason": "XPath on type + name",
+              "warnings": [
+                "XPath is slow on iOS; prefer accessibility id or predicates."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeStaticText",
+                "attrs": {
+                  "name": "dashboard_greeting"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[1]",
+              "rank": 6,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.0"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "ios",
+            "tag": "XCUIElementTypeStaticText",
+            "attrs": {
+              "name": "dashboard_greeting",
+              "label": "Hello, demo",
+              "value": "Hello, demo",
+              "type": "XCUIElementTypeStaticText",
+              "accessible": "true"
+            },
+            "bounds": {
+              "x": 24,
+              "y": 100,
+              "width": 342,
+              "height": 40
+            },
+            "ancestry": [
+              "AppiumAUT",
+              "XCUIElementTypeApplication",
+              "XCUIElementTypeWindow",
+              "XCUIElementTypeOther"
+            ],
+            "siblingIndex": 0,
+            "screenSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:36.117Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "ios",
+                "tag": "XCUIElementTypeStaticText",
+                "attrs": {
+                  "name": "dashboard_greeting",
+                  "label": "Hello, demo",
+                  "value": "Hello, demo",
+                  "type": "XCUIElementTypeStaticText",
+                  "accessible": "true"
+                },
+                "bounds": {
+                  "x": 24,
+                  "y": 100,
+                  "width": 342,
+                  "height": 40
+                },
+                "ancestry": [
+                  "AppiumAUT",
+                  "XCUIElementTypeApplication",
+                  "XCUIElementTypeWindow",
+                  "XCUIElementTypeOther"
+                ],
+                "siblingIndex": 0,
+                "screenSize": {
+                  "width": 390,
+                  "height": 844
+                }
+              },
+              "locators": [
+                {
+                  "platform": "ios",
+                  "strategy": "accessibility id",
+                  "value": "dashboard_greeting",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "accessibilityIdentifier (name differs from label)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "name": "dashboard_greeting"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeStaticText\" AND label == \"Hello, demo\"",
+                  "rank": 3,
+                  "score": 66,
+                  "reason": "Predicate: type + accessibility label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeStaticText",
+                    "attrs": {
+                      "label": "Hello, demo"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeStaticText[`name == \"dashboard_greeting\"`]",
+                  "rank": 4,
+                  "score": 80,
+                  "reason": "Class chain: type + name",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeStaticText",
+                    "attrs": {
+                      "name": "dashboard_greeting"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeStaticText[`label == \"Hello, demo\"`]",
+                  "rank": 4,
+                  "score": 55,
+                  "reason": "Class chain: type + label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeStaticText",
+                    "attrs": {
+                      "label": "Hello, demo"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeStaticText\" AND value == \"Hello, demo\"",
+                  "rank": 5,
+                  "score": 42,
+                  "reason": "Predicate: type + value",
+                  "warnings": [
+                    "Value reflects element state (typed text, switch state) and is often unstable."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeStaticText",
+                    "attrs": {
+                      "value": "Hello, demo"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "class name",
+                  "value": "XCUIElementTypeStaticText",
+                  "rank": 5,
+                  "score": 35,
+                  "reason": "Element type only",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeStaticText",
+                    "attrs": {}
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "//XCUIElementTypeStaticText[@name=\"dashboard_greeting\"]",
+                  "rank": 6,
+                  "score": 25,
+                  "reason": "XPath on type + name",
+                  "warnings": [
+                    "XPath is slow on iOS; prefer accessibility id or predicates."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeStaticText",
+                    "attrs": {
+                      "name": "dashboard_greeting"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[1]",
+                  "rank": 6,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.0"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-28T05:58:35.110Z",
+      "updatedAt": "2026-10-28T05:58:36.117Z"
+    },
+    {
+      "id": "77da01e1-c65c-42a6-8e73-e53a8b1fcdba",
+      "name": "logoutButton",
+      "purpose": "Signs out",
+      "platforms": {
+        "android": {
+          "screen": "Dashboard",
+          "locators": [
+            {
+              "platform": "android",
+              "strategy": "id",
+              "value": "com.example.shop:id/logout",
+              "rank": 2,
+              "score": 90,
+              "reason": "resource-id",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "com.example.shop:id/logout"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"com.example.shop:id/logout\").className(\"android.widget.Button\")",
+              "rank": 3,
+              "score": 82,
+              "reason": "UiAutomator: resource-id + class",
+              "warnings": [],
+              "criteria": {
+                "tag": "android.widget.Button",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/logout"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().resourceId(\"com.example.shop:id/logout\").text(\"LOG OUT\")",
+              "rank": 3,
+              "score": 78,
+              "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "attrs": {
+                  "resource-id": "com.example.shop:id/logout",
+                  "text": "LOG OUT"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "-android uiautomator",
+              "value": "new UiSelector().className(\"android.widget.Button\").text(\"LOG OUT\")",
+              "rank": 4,
+              "score": 60,
+              "reason": "UiAutomator: class + visible text",
+              "warnings": [
+                "Text may change with copy edits or localization."
+              ],
+              "criteria": {
+                "tag": "android.widget.Button",
+                "attrs": {
+                  "text": "LOG OUT"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "//android.widget.Button[@text=\"LOG OUT\"]",
+              "rank": 5,
+              "score": 30,
+              "reason": "XPath on class + text",
+              "warnings": [
+                "XPath is slower and more brittle than UiAutomator."
+              ],
+              "criteria": {
+                "tag": "android.widget.Button",
+                "attrs": {
+                  "text": "LOG OUT"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "android",
+              "strategy": "xpath",
+              "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]",
+              "rank": 5,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.1"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "android",
+            "tag": "android.widget.Button",
+            "attrs": {
+              "resource-id": "com.example.shop:id/logout",
+              "text": "LOG OUT",
+              "class": "android.widget.Button",
+              "package": "com.example.shop",
+              "clickable": "true"
+            },
+            "bounds": {
+              "x": 80,
+              "y": 2200,
+              "width": 920,
+              "height": 120
+            },
+            "ancestry": [
+              "hierarchy",
+              "android.widget.FrameLayout",
+              "android.widget.LinearLayout"
+            ],
+            "siblingIndex": 1,
+            "screenSize": {
+              "width": 1080,
+              "height": 2400
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:37.158Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "android",
+                "tag": "android.widget.Button",
+                "attrs": {
+                  "resource-id": "com.example.shop:id/logout",
+                  "text": "LOG OUT",
+                  "class": "android.widget.Button",
+                  "package": "com.example.shop",
+                  "clickable": "true"
+                },
+                "bounds": {
+                  "x": 80,
+                  "y": 2200,
+                  "width": 920,
+                  "height": 120
+                },
+                "ancestry": [
+                  "hierarchy",
+                  "android.widget.FrameLayout",
+                  "android.widget.LinearLayout"
+                ],
+                "siblingIndex": 1,
+                "screenSize": {
+                  "width": 1080,
+                  "height": 2400
+                }
+              },
+              "locators": [
+                {
+                  "platform": "android",
+                  "strategy": "id",
+                  "value": "com.example.shop:id/logout",
+                  "rank": 2,
+                  "score": 90,
+                  "reason": "resource-id",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/logout"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"com.example.shop:id/logout\").className(\"android.widget.Button\")",
+                  "rank": 3,
+                  "score": 82,
+                  "reason": "UiAutomator: resource-id + class",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "android.widget.Button",
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/logout"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().resourceId(\"com.example.shop:id/logout\").text(\"LOG OUT\")",
+                  "rank": 3,
+                  "score": 78,
+                  "reason": "UiAutomator: resource-id + text (disambiguates repeated ids)",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "attrs": {
+                      "resource-id": "com.example.shop:id/logout",
+                      "text": "LOG OUT"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "-android uiautomator",
+                  "value": "new UiSelector().className(\"android.widget.Button\").text(\"LOG OUT\")",
+                  "rank": 4,
+                  "score": 60,
+                  "reason": "UiAutomator: class + visible text",
+                  "warnings": [
+                    "Text may change with copy edits or localization."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.Button",
+                    "attrs": {
+                      "text": "LOG OUT"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "//android.widget.Button[@text=\"LOG OUT\"]",
+                  "rank": 5,
+                  "score": 30,
+                  "reason": "XPath on class + text",
+                  "warnings": [
+                    "XPath is slower and more brittle than UiAutomator."
+                  ],
+                  "criteria": {
+                    "tag": "android.widget.Button",
+                    "attrs": {
+                      "text": "LOG OUT"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "android",
+                  "strategy": "xpath",
+                  "value": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]",
+                  "rank": 5,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.1"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        },
+        "ios": {
+          "screen": "Dashboard",
+          "locators": [
+            {
+              "platform": "ios",
+              "strategy": "accessibility id",
+              "value": "logoutButton",
+              "rank": 1,
+              "score": 95,
+              "reason": "accessibilityIdentifier (name differs from label)",
+              "warnings": [],
+              "criteria": {
+                "attrs": {
+                  "name": "logoutButton"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios predicate string",
+              "value": "type == \"XCUIElementTypeButton\" AND label == \"Log out\"",
+              "rank": 3,
+              "score": 66,
+              "reason": "Predicate: type + accessibility label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "label": "Log out"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeButton[`name == \"logoutButton\"`]",
+              "rank": 4,
+              "score": 80,
+              "reason": "Class chain: type + name",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "logoutButton"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "-ios class chain",
+              "value": "**/XCUIElementTypeButton[`label == \"Log out\"`]",
+              "rank": 4,
+              "score": 55,
+              "reason": "Class chain: type + label",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "label": "Log out"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "class name",
+              "value": "XCUIElementTypeButton",
+              "rank": 5,
+              "score": 35,
+              "reason": "Element type only",
+              "warnings": [],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {}
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "//XCUIElementTypeButton[@name=\"logoutButton\"]",
+              "rank": 6,
+              "score": 25,
+              "reason": "XPath on type + name",
+              "warnings": [
+                "XPath is slow on iOS; prefer accessibility id or predicates."
+              ],
+              "criteria": {
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "logoutButton"
+                }
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            },
+            {
+              "platform": "ios",
+              "strategy": "xpath",
+              "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]",
+              "rank": 6,
+              "score": 10,
+              "reason": "Absolute indexed XPath (last resort)",
+              "warnings": [
+                "Breaks on any layout change above this element."
+              ],
+              "criteria": {
+                "attrs": {},
+                "nodeId": "0.0.0.0.1"
+              },
+              "snapshotMatches": 1,
+              "liveMatches": null,
+              "unique": true
+            }
+          ],
+          "fingerprint": {
+            "platform": "ios",
+            "tag": "XCUIElementTypeButton",
+            "attrs": {
+              "name": "logoutButton",
+              "label": "Log out",
+              "type": "XCUIElementTypeButton",
+              "accessible": "true"
+            },
+            "bounds": {
+              "x": 24,
+              "y": 760,
+              "width": 342,
+              "height": 52
+            },
+            "ancestry": [
+              "AppiumAUT",
+              "XCUIElementTypeApplication",
+              "XCUIElementTypeWindow",
+              "XCUIElementTypeOther"
+            ],
+            "siblingIndex": 1,
+            "screenSize": {
+              "width": 390,
+              "height": 844
+            }
+          },
+          "history": [
+            {
+              "capturedAt": "2026-10-28T05:58:38.176Z",
+              "device": null,
+              "appId": null,
+              "fingerprint": {
+                "platform": "ios",
+                "tag": "XCUIElementTypeButton",
+                "attrs": {
+                  "name": "logoutButton",
+                  "label": "Log out",
+                  "type": "XCUIElementTypeButton",
+                  "accessible": "true"
+                },
+                "bounds": {
+                  "x": 24,
+                  "y": 760,
+                  "width": 342,
+                  "height": 52
+                },
+                "ancestry": [
+                  "AppiumAUT",
+                  "XCUIElementTypeApplication",
+                  "XCUIElementTypeWindow",
+                  "XCUIElementTypeOther"
+                ],
+                "siblingIndex": 1,
+                "screenSize": {
+                  "width": 390,
+                  "height": 844
+                }
+              },
+              "locators": [
+                {
+                  "platform": "ios",
+                  "strategy": "accessibility id",
+                  "value": "logoutButton",
+                  "rank": 1,
+                  "score": 95,
+                  "reason": "accessibilityIdentifier (name differs from label)",
+                  "warnings": [],
+                  "criteria": {
+                    "attrs": {
+                      "name": "logoutButton"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios predicate string",
+                  "value": "type == \"XCUIElementTypeButton\" AND label == \"Log out\"",
+                  "rank": 3,
+                  "score": 66,
+                  "reason": "Predicate: type + accessibility label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "label": "Log out"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeButton[`name == \"logoutButton\"`]",
+                  "rank": 4,
+                  "score": 80,
+                  "reason": "Class chain: type + name",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "name": "logoutButton"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "-ios class chain",
+                  "value": "**/XCUIElementTypeButton[`label == \"Log out\"`]",
+                  "rank": 4,
+                  "score": 55,
+                  "reason": "Class chain: type + label",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "label": "Log out"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "class name",
+                  "value": "XCUIElementTypeButton",
+                  "rank": 5,
+                  "score": 35,
+                  "reason": "Element type only",
+                  "warnings": [],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {}
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "//XCUIElementTypeButton[@name=\"logoutButton\"]",
+                  "rank": 6,
+                  "score": 25,
+                  "reason": "XPath on type + name",
+                  "warnings": [
+                    "XPath is slow on iOS; prefer accessibility id or predicates."
+                  ],
+                  "criteria": {
+                    "tag": "XCUIElementTypeButton",
+                    "attrs": {
+                      "name": "logoutButton"
+                    }
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                },
+                {
+                  "platform": "ios",
+                  "strategy": "xpath",
+                  "value": "/AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]",
+                  "rank": 6,
+                  "score": 10,
+                  "reason": "Absolute indexed XPath (last resort)",
+                  "warnings": [
+                    "Breaks on any layout change above this element."
+                  ],
+                  "criteria": {
+                    "attrs": {},
+                    "nodeId": "0.0.0.0.1"
+                  },
+                  "snapshotMatches": 1,
+                  "liveMatches": null,
+                  "unique": true
+                }
+              ],
+              "screenshot": null,
+              "source": "offline-snapshot"
+            }
+          ],
+          "codeRefs": [],
+          "implementation": null
+        }
+      },
+      "tests": [],
+      "createdAt": "2026-10-28T05:58:37.158Z",
+      "updatedAt": "2026-10-28T05:58:38.176Z"
+    }
+  ],
+  "tests": []
+}
